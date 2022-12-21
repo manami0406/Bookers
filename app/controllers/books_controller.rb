@@ -11,7 +11,7 @@ class BooksController < ApplicationController
     book = Book.new(book_params)
     book.save
     redirect_to '/top'
-    # 詳細画面へリダイレクトへ直す
+    # 詳細画面へリダイレクトに直す
   end
   
   def show
