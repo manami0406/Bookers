@@ -30,3 +30,14 @@
 .link{
   margin:30px;
 }
+
+body{
+  margin:33px;
+}
+.blog{
+  display:flex;
+}
+p{
+  display:inline-block;
+  margin:20px 30px;
+}

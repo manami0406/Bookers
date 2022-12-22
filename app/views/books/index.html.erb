@@ -1,9 +1,20 @@
-<h1>Books</h1>
+<body>
 
-<% @books.each do |book| %>
-<p>タイトル</p>
-<span><%= book.title %></span>
-<% end %>
+  <h1>Books</h1>
+
+  <div class="blog">
+    <p>Title</p>
+    <% @books.each do |book| %>
+    <%= book.title %>
+    <% end %>
+
+    <p>body</p>
+    <% @books.each do |book| %>
+    <%= book.body %>
+    <% end %>
+  </div>
+
+</body>
 
 <h2>New Book</h2>
 <!--form_with部分-->
