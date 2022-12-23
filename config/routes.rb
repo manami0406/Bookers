@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   get 'books' => 'books#index'
-  get 'books' =>  'books#new'
   post 'books' => 'books#create'
-  get 'books/show'
+  get 'books/:id' => 'books#show'
   get 'books/edit'
   get 'top' => 'homes#top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

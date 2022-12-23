@@ -34,10 +34,26 @@
 body{
   margin:33px;
 }
-.blog{
+
+h1{
   display:flex;
 }
+
 p{
   display:inline-block;
-  margin:20px 30px;
+  margin:0 30px;
+}
+
+.books{
+  display:flex;
+}
+
+.titles{
+  display:block;
+  margin:0 60px 7px 0;
+}
+
+.bodies{
+  display:block;
+  margin:0 60px 7px 0;
 }
