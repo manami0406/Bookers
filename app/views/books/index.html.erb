@@ -5,23 +5,22 @@
     <p>Title</p>
     <p>Body</p>
     
-    <div class=books>
       <% @books.each do |book| %>
-      <div class=titles>
+      <div class="all">
         
-        <%= book.title %>
+        <span><%= book.title %></span>
         
-      </div>
-      <div class=bodies>
+        <span><%= book.body %></span>
         
-        <%= book.body %>
-        
+        <%= link_to "Show","/books/#{book.id}" %>
+        <%= link_to "Edit",edit_book_path(book.id) %>
+        <%= link_to "Destroy",destroy_book_path(book.id), method: :delete,"data-confirm" => "Are you sure?" %>
       </div>
       <% end %>
-    </div>
+    
       
       
-  </div>
+
 
 </body>
 
