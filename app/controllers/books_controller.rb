@@ -5,9 +5,12 @@ class BooksController < ApplicationController
   
   def create
     @book = Book.new(book_params)
-    @book.save
-    redirect_to show_book_path(@book.id)
-    # 詳細画面へリダイレクトに直す
+    if @book.save
+      redirect_to show_book_path(@book.id)
+    else
+      @books = Book.all
+      render:index
+    end
   end
   
   def show
