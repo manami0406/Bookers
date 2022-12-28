@@ -22,7 +22,7 @@ strong{
   margin:30px 0 0 33px;
 }
 
-h1{
+.index-heading{
   display:flex;
 }
 p{
@@ -59,4 +59,22 @@ p{
   margin-top:10px;
   font-weight:lighter;
   }
+
+.show-title,.show-body{
+  margin:33px;
+}
+
+.edit-title,.edit-body{
+  margin-top:10px;
+}
+
+.error{
+  width:40%;
+  background-color:red;
+}
+
+.error-message{
+  height:50px;
+  width:40%;
+  border-bottom:1px solid red;
 }
