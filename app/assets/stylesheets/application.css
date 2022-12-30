@@ -11,13 +11,11 @@ body{
 strong{
   font-weight:bolder;
 }
+
 .text{
-  margin:33px;
-}
-.text p{
+  font-size:15px;
   line-height:3;
 }
-
 .start-link{
   margin:30px 0 0 33px;
 }
@@ -25,31 +23,9 @@ strong{
 .index-heading{
   display:flex;
 }
-p{
-  display:inline-block;
-  margin:0 200px 0 60px;
-  font-weight:bold;
-}
 
-.all{
-  position:relative;
-}
-.body{
-  position:absolute;
-  left:250px;
-}
-
-.show{
-  position:absolute;
-  left:800px;
-}
-.edit{
-  position:absolute;
-  left:860px;
-}
-.destroy{
-  position:absolute;
-  left:910px;
+td{
+  padding-right:20px;
 }
 
 .new{
@@ -69,12 +45,17 @@ p{
 }
 
 .error{
-  width:40%;
-  background-color:red;
+  border:2px solid red;
+  height:150px;
+  width:500px;
 }
 
 .error-message{
-  height:50px;
-  width:40%;
-  border-bottom:1px solid red;
+  background-color:red;
+  color:white;
+}
+
+.error-coment{
+  padding-top:30px;
+  padding-left:70px;
 }
